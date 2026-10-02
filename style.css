@@ -83,7 +83,7 @@ header {
 .hero {
     min-height: 540px;
     background-image:  linear-gradient(rgba(3, 14, 25, .25), rgba(3, 14, 25, .55)),
-        url("https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?auto=format&fit=crop&w=1600&q=85");
+        url("https://picsum.photos/seed/japan/1920/700");
     background-size: cover;
     background-position: center;
     position: relative;
@@ -221,10 +221,11 @@ header {
     justify-content: space-around;
     text-align: center;
     padding: 22px 10px;
+    background: #4f84bc13;
 }
 .days div {
     flex: 1;
-    border-right: 1px solid #315576;
+    border-right: 1px solid #41607d;
 }
 .days div:last-child {
     border: none;
@@ -509,4 +510,14 @@ body.light #modeBtn {
     .destination {
         flex-basis: 100%;
     }
+}
+
+#countrySelect {
+    padding: 5px 10px;
+    border: 1px solid #315576;
+    background-color: #061321;
+    color: white;
+    width: 500px;
+    height: 35px;
+    font-size: 1rem;
 }

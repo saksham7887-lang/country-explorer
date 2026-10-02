@@ -13,16 +13,20 @@
             <span>🌐</span> COUNTRY EXPLORER
         </div>
         <div class="nav-right">
-        <div class="links">
-            <a href="#home"><h3>Home</h3></a>
-            <a href="#destinations"><h3>Destinations</h3></a>
-            <a href="#culture"><h3>Culture</h3></a>
-            <a href="#about"><h3>About</h3></a>
+             <div class="search">
+                <select id="countrySelect">
+                    <option value="JP">Japan</option>
+                </select>
+                <!-- <input type="text" id="searchInput"placeholder= "Search country...">
+                <button>🔍</button> -->
             </div>
-            <div class="search">
-                <input type="text" id="searchInput"placeholder= "Search country...">
-                <button>🔍</button>
+            <div class="links">
+                <a href="#home"><h3>Home</h3></a>
+                <a href="#destinations"><h3>Destinations</h3></a>
+                <a href="#culture"><h3>Culture</h3></a>
+                <a href="#about"><h3>About</h3></a>
             </div>
+           
             <button id="modeBtn"><h3>🌙</h3> </button>
         </div>
     </nav>
@@ -31,8 +35,8 @@
     <div class="hero-content">
         <p class="country-code">JP</p>
         <h1 id="countryName">JAPAN</h1>
-        <h2>Land of the Rising Sun</h2>
-        <p>
+        <h2 id="countryCaption">Land of the Rising Sun</h2>
+        <p id="countryDescription">
             From ancient temples to neon-lit cities, Japan is a
             perfect blend of tradition and innovation. Explore
             its rich culture, beautiful places and unique lifestyle.
@@ -47,7 +51,7 @@
         <span>📌</span>
         <div>
             <h2>QUICK FACTS</h2>
-            <p>Get a quick overview of Japan</p>
+            <p id="countryFacts">Get a quick overview of Japan</p>
         </div>
     </div>
     <div class="facts">
@@ -78,7 +82,7 @@
         <div class="fact">
             <div class="fact-icon">👥</div>
             <div> <p>Population</p>
-                <h3 id="population">125M</h3>
+                <h3 id="population">125,000,000</h3>
             </div>
         </div>
     </div>
@@ -95,36 +99,36 @@
         <div class="weather-main">
             <div class="sun">☀</div>
             <div>
-                <h1>24°C</h1>
-                <h3>Sunny</h3>
-                <p>Humidity 60%</p>
+                <h1 id="currentTemp">24°C</h1>
+                <h3 id="currentWeather">Sunny</h3>
+                <p id="currentHumidity">Humidity 60%</p>
             </div>
         </div>
         <div class="days">
             <div>
-                <p>Mon</p>
+                <p id="day1">Mon</p>
                 <span>☀</span>
-                <small>22° / 12°</small>
+                <small id="temp1">22° / 12°</small>
             </div>
             <div>
-                <p>Tue</p>
+                <p id="day2">Tue</p>
                 <span>☀</span>
-                <small>24° / 14°</small>
+                <small id="temp2">24° / 14°</small>
             </div>
             <div>
-                <p>Wed</p>
+                <p id="day3">Wed</p>
                 <span>☁</span>
-                <small>21° / 13°</small>
+                <small id="temp3">21° / 13°</small>
             </div>
             <div>
-                <p>Thu</p>
+                <p id="day4">Thu</p>
                 <span>☀</span>
-                <small>23° / 15°</small>
+                <small id="temp4">23° / 15°</small>
             </div>
             <div>
-                <p>Fri</p>
+                <p id="day5">Fri</p>
                 <span>☀</span>
-                <small>20° / 12°</small>
+                <small id="temp5">20° / 12°</small>
             </div>
         </div>
     </div>
@@ -134,37 +138,37 @@
         <span>🗺</span>
         <div>
             <h2>TOP DESTINATIONS</h2>
-            <p>Must-visit places in Japan</p>
+            <p id="destinationDescription">Must-visit places in Japan</p>
         </div>
     </div>
     <div class="destinations">
         <div class="destination">
-              <img src = "https://images.pexels.com/photos/35125678/pexels-photo-35125678.jpeg"> 
+              <img id="place1img" src = "https://images.pexels.com/photos/35125678/pexels-photo-35125678.jpeg"> 
             <div>
-                <h3>Tokyo →</h3>
-                <p>Modern city and technology</p>
+                <h3 id="place1name">Tokyo →</h3>
+                <p id="place1description">Modern city and technology</p>
             </div>
         </div>
 
         <div class="destination">
-            <img src = https://thewastory.com/wp-content/uploads/2026/05/kyoto-prefecture-culture-guide-featured-image.webp>
+            <img id="place2img" src = https://thewastory.com/wp-content/uploads/2026/05/kyoto-prefecture-culture-guide-featured-image.webp>
             <div>
-                <h3>Kyoto →</h3>
-                <p>Traditional temples and culture</p>
+                <h3 id="place2name">Kyoto →</h3>
+                <p id="place2description">Traditional temples and culture</p>
             </div>
         </div>
         <div class="destination">
-            <img src = "https://th.bing.com/th/id/OIP.oqeDuem_Yzas4vDOxGUPyAHaE8?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3">
+            <img id="place3img" src = "https://th.bing.com/th/id/OIP.oqeDuem_Yzas4vDOxGUPyAHaE8?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3">
             <div>
-                <h3>Osaka →</h3>
-                <p>Food, shopping and entertainment</p>
+                <h3 id="place3name">Osaka →</h3>
+                <p id="place3description">Food, shopping and entertainment</p>
             </div>
         </div>
         <div class="destination">
-            <img src = "https://tse2.mm.bing.net/th/id/OIP.XZZxN33Pu5cKhnkdt4lVFwHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3">
+            <img id="place4img" src = "https://tse2.mm.bing.net/th/id/OIP.XZZxN33Pu5cKhnkdt4lVFwHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3">
             <div>
-                <h3>Fuji →</h3>
-                <p>Beautiful mountain views</p>
+                <h3 id="place4name">Fuji →</h3>
+                <p id="place4description">Beautiful mountain views</p>
             </div>
         </div>
     </div>
@@ -174,35 +178,36 @@
         <span>🌸</span>
         <div>
             <h2>CULTURE & LIFESTYLE</h2>
-            <p>Discover the traditions and lifestyle of Japan</p>
+            <p id="lifestyle">Discover the traditions and lifestyle of Japan</p>
         </div>
     </div>
     <div class="culture">
         <div class="trad">
-            <img src = "https://tse1.explicit.bing.net/th/id/OIP.k17Y9hErsklJm57vk0KMjgHaHa?r=0&w=4096&h=4096&rs=1&pid=ImgDetMain&o=7&rm=3">
-            <h3>Traditional Life →</h3>
-            <p>Kimono •Yukata</p>
-        </div>
-        <div class="trad">
             <img src = "https://th.bing.com/th/id/OIP.YXdvQGYVafZsulGngr5g_AHaNN?w=132&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3">
             <h3>Festivals →</h3>
-            <p>Hanami • Matsuri</p>
+            <p id="fest">Hanami • Matsuri</p>
+            <p id="festDescription"></p>
+        </div>
+        <div class="trad">
+            <img src = "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiR7UxcoxLTK266-dpM5sLIWCHX50Moa2AW7Ar6628A5LYAn1L9nnwv9qLRgL3v5OffnOu4Mj_xWgNH-pH89roQJ9gEAdfNwbsO91NH29hlxJNKJqOjft1tUaz2BRI4_UV-zzA2Giv-qN5u/s1600/c9efa975-b9f0-4006-a1bd-7cae040c798awallpaper.jpg">
+            <h3>Events →</h3>
+            <p id="eventList">Kimono •Yukata</p>
         </div>
         <div class="trad">
             <img src="https://images.unsplash.com/photo-1478436127897-769e1b3f0f36?auto=format&fit=crop&w=700&q=80">
             <h3>Religion →</h3>
-            <p>Shinto • Buddhism</p>
+            <p id="religion">Shinto • Buddhism</p>
         </div>
         <div class="trad">
             <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=80">
             <h3>Cuisine →</h3>
-            <p>Sushi • Ramen • Matcha</p>
+            <p id="cuisine">Sushi • Ramen • Matcha</p>
         </div>
-        <div class="trad">
+        <!-- <div class="trad">
             <img src="https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&w=700&q=80">
             <h3>Modern Life →</h3>
             <p>Technology • Pop Culture</p>
-        </div>
+        </div> -->
     </div>
 </section>
 <section class="section">
@@ -211,25 +216,25 @@
             <span>💡</span>
             <div>
                 <h2>DID YOU KNOW?</h2>
-                <p>Interesting facts about Japan</p>
+                <p id="interestingFacts">Interesting facts about Japan</p>
             </div>
         </div>
         <div class="facts-row">
             <div>
-                <h3>🗻 Mount Fuji</h3>
-                <p>Japan's highest peak is 3,776 meters tall.</p>
+                <h3 id="fact1Name">🗻 Mount Fuji</h3>
+                <p id="fact1Description">Japan's highest peak is 3,776 meters tall.</p>
             </div>
             <div>
-                <h3>🌸 Cherry Blossoms</h3>
-                <p>Hanami is a popular spring tradition.</p>
+                <h3 id="fact2Name">🌸 Cherry Blossoms</h3>
+                <p id="fact2Description">Hanami is a popular spring tradition.</p>
             </div>
             <div>
-                <h3>🚄 Rail System</h3>
-                <p>Japan is famous for its fast trains.</p>
+                <h3 id="fact3Name">🚄 Rail System</h3>
+                <p id="fact3Description">Japan is famous for its fast trains.</p>
             </div>
             <div>
-                <h3>🍣 Sushi</h3>
-                <p>Sushi is one of Japan's most famous foods.</p>
+                <h3 id="fact4Name">🍣 Sushi</h3>
+                <p id="fact4Description">Sushi is one of Japan's most famous foods.</p>
             </div>
         </div>
     </div>
@@ -239,40 +244,40 @@
         <span>🧭</span>
         <div>
             <h2>TRAVEL TIPS</h2>
-            <p>Make the most of your trip to Japan</p>
+            <p id="travelTips">Make the most of your trip to Japan</p>
         </div>
     </div>
     <div class="tips">
         <div class="tip">
             <span>01</span>
             <h3>Best time to visit</h3>
-            <p>Spring and Autumn are popular seasons.</p>
+            <p id="bestTime">Spring and Autumn are popular seasons.</p>
         </div>
         <div class="tip">
             <span>02</span>
             <h3>Visa</h3>
-            <p>Check visa requirements before travelling.</p>
+            <p id="visa">Check visa requirements before travelling.</p>
         </div>
         <div class="tip">
             <span>03</span>
             <h3>Safety</h3>
-            <p>Japan is generally safe for travellers.</p>
+            <p id="safety">Japan is generally safe for travellers.</p>
         </div>
         <div class="tip">
             <span>04</span>
             <h3>Budget</h3>
-            <p>Plan your daily travel expenses.</p>
+            <p id="budget">Plan your daily travel expenses.</p>
         </div>
         <div class="tip">
             <span>05</span>
             <h3>Transport</h3>
-            <p>Use trains and local transport to travel.</p>
+            <p id="transport">Use trains and local transport to travel.</p>
         </div>
     </div>
 </section>
 <section class="banner">
     <div>
-        <h2>Ready to explore Japan?</h2>
+        <h2 id="readyToExplore">Ready to explore Japan?</h2>
         <p>Your next adventure is just a click away.</p>
     </div>
     <a href="#destinations">Explore Destinations →</a>
@@ -291,5 +296,7 @@
     </div>
     <p> Country Explorer © 2026</p>
 </footer>
+<script src="codes.js"></script>
+<script src="project.js"></script>
 </body>
 </html>
